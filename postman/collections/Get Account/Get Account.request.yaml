@@ -1,0 +1,17 @@
+$kind: http-request
+name: Get Account
+url: "{{instance_url}}/services/data/v64.0/query?q=SELECT+Id,Name+FROM+Account"
+method: GET
+queryParams:
+  q: SELECT+Id,Name+FROM+Account
+auth:
+  type: oauth2
+  credentials:
+    useBrowser: true
+    clientSecret: "{{client_secret}}"
+    clientId: "{{client_id}}"
+    scope: full api refresh_token
+    accessTokenUrl: https://login.salesforce.com/services/oauth2/token
+    authUrl: https://login.salesforce.com/services/oauth2/authorize
+    addTokenTo: header
+order: 1000

@@ -1,0 +1,11 @@
+name: Salesforce API
+values:
+  - key: access_token
+    value: ''
+  - key: instance_url
+    value: ''
+  - key: client_id
+    value: ''
+  - key: client_secret
+    value: ''
+color: 0

@@ -41,6 +41,12 @@ $RECYCLE.BIN/
 
 # Local environment variables
 .env
+# Postman generated/runtime files
+.postman/
+postman/**/.resources/
+
+# Runtime responses
+response.json
 
 # Python Salesforce Functions
 **/__pycache__/
